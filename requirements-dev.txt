@@ -1,0 +1,27 @@
+# Testing
+pytest
+pytest-cov
+pytest-mock
+
+# Linters & Formatters
+flake8
+black
+pylint
+mypy
+flake8-docstrings
+
+# Development Tools
+ipython
+pre-commit
+tox
+
+# Coverage
+coverage
+
+# For API testing
+pytest-fastapi
+pytest-flask
+
+# Documentation (Optional)
+sphinx
+sphinx-autodoc-typehints
