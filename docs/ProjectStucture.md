@@ -3,7 +3,11 @@ The purpose of `ProductStructure.md` is to provide a consistent, organized proje
 
 /discussIQ
 │
-├── /docs/                  # Documentation (e.g., README, API docs)
+├── assets/               # Folder for images, logos, icons, etc.
+│   └── company_logo.png  # Example: company logo image
+│
+├── documentation/        # Folder for documentation
+│   └── dockerfile_containerization.md  # Example doc
 │
 ├── /flask_app/             # Flask-specific code
 │   ├── /static/            # Static files (e.g., CSS, JS)
