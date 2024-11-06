@@ -4,7 +4,7 @@ The purpose of `ProductStructure.md` is to provide a consistent, organized proje
 /discussIQ
 │
 ├── assets/               # Folder for images, logos, icons, etc.
-│   └── company_logo.png  # Example: company logo image
+│   └── discussIQ.png     # Discuss IQ Logo
 │
 ├── documentation/        # Folder for documentation
 │   └── dockerfile_containerization.md  # Example doc
