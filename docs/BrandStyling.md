@@ -12,3 +12,14 @@
 
 **Accent Color:** #FF715B (Soft Coral)
 - For highlighting key elements, like buttons or alerts, to add warmth and approachability.
+
+* Typography
+
+## Font Style
+Font: Roboto or Lato (Sans-serif)
+These fonts are modern, professional, and highly readable across digital devices.
+
+## Font Styling in Roboto / Lato:
+Discuss (in primary color #1D4E89)
+IQ (in secondary color #20A39E)
+The mix emphasizes both words in the name, balancing professionalism with a touch of creativity.
