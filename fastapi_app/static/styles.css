@@ -1,0 +1,257 @@
+/* styles.css */
+:root {
+  --primary-color: #1D4E89;
+  --secondary-color: #20A39E;
+  --bg-color: #121212; /* Dark background */
+  --text-color: #F2F5F9; /* Light text for dark mode */
+  --accent-color: #FF715B; /*For highlighting key elements, like buttons or alerts */
+}
+
+/* General Body Styling */
+body {
+  background-color: var(--bg-color);  /* Uses dark mode background */
+  color: var(--text-color);  /* Uses light text color for dark mode */
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+/* Light mode styles that override dark mode */
+.light-mode {
+  --bg-color: #F2F5F9; /* Light background */
+  --text-color: #121212; /* Dark text for light mode */
+}
+
+/* Button styling with padding above */
+.toggle-button {
+  background-color: var(--secondary-color);
+  color: #fff;
+  border: 1px solid var(--accent-color);
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px; /* Adds space above the button */
+  border-radius: 4px; /* Optional: adds rounded corners */
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Toggle button hover effect */
+.toggle-button:hover {
+  background-color: var(--accent-color);  /* Soft Coral for hover effect */
+  box-shadow: 0 0 3px 2px var(--accent-color);
+  transform: translateY(-2px);
+}
+
+/* Toggle button focus effect */
+.toggle-button:focus {
+  outline: none;
+  box-shadow: 0 0 3px 2px var(--accent-color);
+}
+
+body > form, input, button {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  border: 1px solid var(--text-color);
+}
+
+h1 {
+  font-size: 2.5em;
+  color: var(--primary-color);
+  text-align: center;
+  margin-bottom: 0.5em;
+}
+
+h1 span {
+  color: var(--secondary-color);
+}
+
+h2 {
+  font-size: 2.5em;
+  color: var(--primary-color);
+  text-align: center;
+  margin-bottom: 0.5em;
+}
+
+h2 span {
+  color: var(--secondary-color);
+}
+
+p {
+  font-size: 1.2em;
+  color: var(--primary-color);
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+/* Form Styling */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--bg-color);
+  padding: 2em;
+  border-radius: 4px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Added shadow */
+}
+
+/* File & Text Input Styling */
+input[type="file"], input[type="text"] {
+  background-color: var(--bg-color); /* Ensure input fields have dark background */
+  color: var(--text-color); /* Ensure text is light enough to be readable */
+  padding: 0.5em;
+  border: 1px solid var(--primary-color);
+  border-radius: 4px;
+  margin-bottom: 1.5em;
+}
+
+/* Button styling */
+button {
+  background-color: var(--secondary-color);  /* Teal Green */
+  color: #fff;  /* White text */
+  border: 1px solid var(--secondary-color);  /* Border matches the button */
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--accent-color);  /* Soft Coral for hover effect */
+  border-color: var(--accent-color);  /* Match border color with hover */
+}
+
+button:focus {
+  outline: 3px solid var(--primary-color);
+  box-shadow: 0 0 3px 2px var(--accent-color);
+}
+
+#upload-section, #upload-section > form , #chat-section {
+  background-color: var(--bg-color);  /* Uses dark mode background */
+  border: 1px solid var(--secondary-color);
+  margin: 20px;
+}
+
+#chat-box {
+  width: 95%;
+  height: 300px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-top: 10px;
+  overflow-y: auto;
+  border-radius: 4px; /* Rounded corners */
+}
+
+/* Custom scrollbar */
+#chat-box::-webkit-scrollbar {
+  width: 8px;  /* Scrollbar width */
+}
+
+#chat-box::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color);  /* Thumb color */
+
+}
+
+#chat-box::-webkit-scrollbar-track {
+  background-color: var(--secondary-color);  /* Track color */
+
+}
+
+#chat-box::-webkit-scrollbar-thumb:hover {
+  background-color: var(--accent-color); /* Hover effect */
+}
+
+#dashboard-container {
+  width: 100%;  /* Ensures it takes the full width of the parent container */
+  max-width: 1200px;  /* Prevents it from expanding beyond 1200px */
+  margin: 0 auto;  /* Centers the container */
+  padding: 20px;  /* Adds padding inside the container */
+  box-sizing: border-box;  /* Ensures padding doesn't affect overall width */
+  overflow-x: hidden;  /* Prevents horizontal overflow */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two equal columns */
+  gap: 20px; /* Space between the columns */
+}
+
+/* General styling for buttons */
+.cta-btn {
+  background-color: #FF715B;  /* Soft Coral for primary button */
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  text-align: center;
+  display: flex;
+  justify-content: center;  /* Centers buttons horizontally */
+  gap: 20px;  /* Adds space between the buttons */
+  margin-top: 20px;  /* Adds space above the buttons */
+  transition: background-color 0.3s, transform 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.cta-btn:hover {
+  background-color: #E56A50;  /* Slightly darker coral on hover */
+  transform: translateY(-2px);  /* Small lift effect */
+}
+
+.cta-btn:active {
+  background-color: #D05F45;  /* Even darker coral when clicked */
+  transform: translateY(0);  /* Reset the lift effect */
+}
+
+/* Styling for secondary CTA button */
+.cta-btn.secondary {
+  background-color: transparent;
+  border: 2px solid #20A39E;  /* Teal Green border for secondary button */
+  color: #20A39E;  /* Teal Green text */
+  padding: 10px 22px;
+  border-radius: 8px;
+  transition: background-color 0.3s, transform 0.2s ease-in-out;
+}
+
+.cta-btn.secondary:hover {
+  background-color: #20A39E;  /* Teal Green background on hover */
+  color: white;
+  transform: translateY(-2px);
+}
+
+.cta-btn.secondary:active {
+  background-color: #1A8E7B;  /* Darker teal when clicked */
+  color: white;
+  transform: translateY(0);
+}
+
+/* Uniform styling for 'Go to Dashboard' button */
+.dashboard-btn {
+  background-color: #20A39E;  /* Teal Green for dashboard button */
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  text-align: center;
+  display: flex;
+  justify-content: center;  /* Centers buttons horizontally */
+  gap: 20px;  /* Adds space between the buttons */
+  margin-top: 20px;  /* Adds space above the buttons */
+  transition: background-color 0.3s, transform 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.dashboard-btn:hover {
+  background-color: #1A8E7B;  /* Darker teal on hover */
+  transform: translateY(-2px);  /* Small lift effect */
+}
+
+.dashboard-btn:active {
+  background-color: #178B74;  /* Even darker teal when clicked */
+  transform: translateY(0);  /* Reset the lift effect */
+}
