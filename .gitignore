@@ -1,0 +1,39 @@
+# Python bytecode files
+__pycache__/
+*.py[cod]
+
+# Virtual environment directories
+venv/
+.env/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+
+# IDE or Editor specific files
+.vscode/
+.idea/
+
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# Pytest cache
+.pytest_cache/
+
+# mypy and linting tools
+.mypy_cache/
+.dmypy.json
+.django_cache/
+
+# VS Code settings
+.settings/
+
+# Docker
+docker-compose.override.yml
+
+# Environment files
+*.env
+
+# Local configuration files (e.g. secrets)
+*.local
