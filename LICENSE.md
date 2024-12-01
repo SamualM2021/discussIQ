@@ -2,7 +2,7 @@
 
 ## Open-Source Use
 
-This project is licensed under the **OpenPro License**. The open-source version of the software is free to use, modify, and distribute for non-commercial purposes under the **Open-Source License** (e.g., [GPLv3]([https://www.gnu.org/licenses/gpl-3.0.html](https://choosealicense.com/licenses/gpl-3.0/))).
+This project is licensed under the **OpenPro License**. The open-source version of the software is free to use, modify, and distribute for non-commercial purposes under the **Open-Source License** (e.g., [GPLv3](https://www.gnu.org/licenses/gpl-3.0.html](https://choosealicense.com/licenses/gpl-3.0/))).
 
 ## Commercial Use
 
